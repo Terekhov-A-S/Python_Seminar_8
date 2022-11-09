@@ -35,11 +35,11 @@ class Cell:
         self.quantity = int(quantity)
 
     def __add__(self, other):
-        return f'Две клетки - хорошо, а одна большая - лучше! Размер клетки равен: {self.quantity + other.quantity}'
+        return f'Из двух маленьких - одна большая! Размер клетки равен: {self.quantity + other.quantity}'
 
     def __sub__(self, other):
         sub = self.quantity - other.quantity
-        return f'Клеточка стала меньше, теперь она равна: {sub} клеточкам' if sub > 0 else 'Клетка исчезла :('
+        return f'Теперь клетка стала меньше: {sub}' if sub > 0 else 'Клетки больше нет...'
 
     def __truediv__(self, other):
         return self.quantity // other.quantity

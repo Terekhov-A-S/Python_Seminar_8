@@ -23,7 +23,7 @@ class Clothes(ABC):
 
     @abstractmethod
     def abstract(self):
-        return 'Smth vary abstract'
+        return 'Что-то очень абстрактное'
 
 
 class Coat(Clothes):
@@ -31,7 +31,7 @@ class Coat(Clothes):
         return f'Для пошива пальто нужно: {self.param / 6.5 + 0.5 :.2f} ткани'
 
     def abstract(self):
-        return 'Smth vary abstract second'
+        return 'Что-то меняется в секунду'
 
 
 class Costume(Clothes):
